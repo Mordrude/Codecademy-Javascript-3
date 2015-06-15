@@ -1,0 +1,16 @@
+var text = "Hello Bob I bob for apples do you bob for Bob?";
+var myName = "Bob";
+var hits = [];
+for(var i = 0; i < text.length; i++){
+    if (text[i] === 'B') {
+        for(var h = i; h < i + myName.length; h++) {
+            hits.push(text[h]);
+        }
+    }
+}
+    if(hits.length === 0) {
+        console.log("Your name wasn't found!");
+    }
+    else {
+        console.log(hits);
+    }
